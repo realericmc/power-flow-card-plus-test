@@ -250,11 +250,16 @@ export const allDynamicStyles = (
       );
     };
 
-    let individualIndex = 0;
-    individual.forEach((_, index) => {
+    for (index = 0; index <4; index++){
       if (!individual[index].has) return;
       getStylesForIndividual(entities!.individual![index], individualIndex);
-      individualIndex++;
-    });
+    };
+    
+//    let individualIndex = 0;
+//    individual.forEach((_, index) => {
+//      if (!individual[index].has) return;
+//      getStylesForIndividual(entities!.individual![index], individualIndex);
+//     individualIndex++;
+//    });
   }
 };
